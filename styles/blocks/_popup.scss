@@ -1,0 +1,136 @@
+@use '../helpers' as *;
+
+.popup-desktop-menu {
+  position: absolute;
+  top: 184px;
+  left: 156px;
+  display: none;
+  background-color: var(--color-light);
+  z-index: 10;
+  flex-direction: column;
+  padding-top: 30px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 338px;
+  padding-bottom: 30px;
+
+  &__icon {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    fill: none !important;
+
+    &--top {
+      top: 0;
+    }
+  }
+
+  &__body {
+    max-width: 338px;
+
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    & li:hover {
+      background: var(--color-light-gray-2);
+    }
+  }
+
+  &__item, &__item2, &__item3, &__item4, &__item5, &__item6 {
+    position: relative;
+    padding: 13px 20px 13px 30px;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover {
+      color: var(--color-blue);
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+
+  &__submenu {
+    padding: 30px 24px 24px 42px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background: var(--color-light);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: opacity 0.3s ease;
+  }
+
+  &__submenu-body {
+    display: flex;
+    column-gap: 40px;
+  }
+
+  &__submenu.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @include mobile-above {
+    display: none;
+  }
+
+  &__submenu-content {
+    display: none;
+  }
+
+  &__submenu-content.active {
+    display: block;
+  }
+
+  &__item-content {
+    display: flex;
+    column-gap: 16px;
+  }
+
+  &__submenu-left-content, &__submenu-right-content {
+    font-size: 30px;
+    color: var(--color-dark);
+    font-family: var(--font-family-base);
+    margin-bottom: 30px;
+  }
+
+  &__submenu-content h2 {
+    color: var(--color-dark);
+    font-size: 30px;
+  }
+
+  &__left-item-text, &__right-item-text {
+    margin-right: 10px;
+  }
+
+  &__left-item-number, &__right-item-number {
+    color: var(--color-dark-50);
+    margin-right: 10px;
+  }
+
+  &__left-list, &__right-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  &__left-item, &__right-item {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.2s;
+    width: 293px;
+
+    &:hover .color, &:hover {
+      color: var(--color-blue);
+    }
+  }
+}
+
+

@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0,
+          maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Test project | Home</title>
+    <link rel="stylesheet" href="./styles/main.css"/>
+    <script src="./scripts/main.js" type="module"></script>
+</head>
+<body>
+<div class="header__promo">
+            <div class="header__language mobile">
+            <img
+                    class="header__language-icon"
+                    src="./icons/other/earth.svg"
+                    alt=""
+                    width="14" height="14"
+            />
+              <span class="header__language-text">RU</span>
+              <span class="header__language-line"></span>
+              <span class="header__language-text is-active">ENG</span>
+          </div>
+            <div class="header__contacts contacts">
+                <div class="contacts__navigation">
+                    <img
+                            class="contacts__icon"
+                            src="./icons/promo/navigation.svg"
+                            alt=""
+                            width="16" height="16"
+                    />
+                
+                    <span>Сайлент Хилл</span>
+                </div>
+                <div class="contacts__phone">
+                    <img
+                            class="contacts__icon"
+                            src="./icons/promo/phone.svg"
+                            alt=""
+                            width="16" height="16"
+                    />
+                
+                    <span>+7 555 555-37-50</span>
+                </div>
+            </div>
+            
+            <span class="header__promo-schedule">Ежедневно 9:00 - 21:00</span>
+            
+            <div class="header__promo-others">
+                <a class="header__promo-link"
+                   href="/"
+                   aria-label="Delivery"
+                   title="Delivery"
+                >Доставка</a>
+                <a class="header__promo-link"
+                   href="/"
+                   aria-label="Payment"
+                   title="Payment"
+                >Оплата</a>
+                <a class="header__promo-link"
+                   href="/"
+                   aria-label="Contacts"
+                   title="Contacts"
+                >Контакты</a>
+            </div>
+        </div>
+    <header class="header">
+        <div class="header__body">
+            <a href="#">
+                <img
+                        class="header__logo"
+                        src="./images/logo.png"
+                        alt=""
+                        width="80" height="80"
+                />
+            </a>
+
+          <div class="header__body-inner">
+              <button type="button" class="header__button-menu"
+                      data-js-button-desktop-menu>
+                  <span class="button-line"></span>
+                  <span class="button-line line-2"></span>
+                  <span class="button-line"></span>
+              </button>
+              
+              <div class="header__search">
+                  <input type="text"
+                         class="header__search-input"
+                         placeholder="Поиск товаров..."
+                  />
+                  
+                  <button class="header__search-button">Найти</button>
+              </div>
+              
+              <div class="header__soc1als">
+                  <a href="#" class="header__soc1als-link">
+                      <svg width="24" height="24" viewBox="0 0 24 24"
+                           fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.53 1.96635C23.3401 1.79255 23.1073 1.67243 22.8556 1.61835C22.6039 1.56427 22.3423 1.57817 22.0978 1.65862L0.995214 8.61492C0.420104 8.80448 0.0301044 9.31785 0.00165128 9.92268C-0.026755 10.5276 0.313323 11.0753 0.868042 11.3181L6.08687 13.6014L7.66145 20.9043C7.72684 21.2077 7.88082 21.4779 8.20703 21.561C8.53698 21.6451 8.77009 21.4648 9.01628 21.2804L12.8891 18.3805L17.4167 22.0855C17.6804 22.3014 18.0027 22.414 18.3314 22.414C18.4906 22.4138 18.6487 22.3876 18.7995 22.3363C19.276 22.1747 19.6292 21.7858 19.7444 21.296L23.9616 3.36623C24.0204 3.11559 24.0114 2.85382 23.9356 2.6078C23.8597 2.36178 23.7197 2.14039 23.53 1.96635ZM9.35364 14.9099C9.35106 14.9159 9.34853 14.9228 9.34614 14.9311L8.47313 17.9811L7.49889 13.4626L14.1981 9.74053L9.51432 14.6379C9.44087 14.7152 9.38593 14.8082 9.35364 14.9099ZM9.63071 19.0595L10.0272 17.6741L10.4065 16.349L11.7654 17.461L9.63071 19.0595ZM22.5894 3.04345L18.3723 20.9732C18.3702 20.9821 18.3674 20.9944 18.3468 21.0014C18.3264 21.0083 18.3164 21.0004 18.3094 20.9946L13.3551 16.9405L13.3547 16.9402L11.0593 15.0618L18.4338 7.35093C18.5504 7.22906 18.6194 7.06944 18.6283 6.90105C18.6372 6.73265 18.5854 6.56665 18.4824 6.43317C18.3793 6.29967 18.2318 6.20755 18.0666 6.17353C17.9015 6.13952 17.7296 6.16586 17.5822 6.24778L6.66259 12.3148L1.43307 10.0267C1.41714 10.0197 1.40837 10.0158 1.40964 9.98887C1.4109 9.96201 1.42 9.95896 1.4365 9.95353L22.5391 2.99728C22.5493 2.99395 22.5608 2.9901 22.5778 3.00557C22.5947 3.02114 22.5919 3.03295 22.5894 3.04345Z"
+                              fill="#343A3F"/>
+                      </svg>
+                  </a>
+                  
+                  <a href="#" class="header__soc1als-link">
+                      <svg width="24" height="24" viewBox="0 0 24 24"
+                           fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M20.1298 3.26981C18.0248 1.16237 15.2254 0.00123047 12.243 0C6.09751 0 1.09598 5.0014 1.09352 11.1485C1.09267 13.1136 1.60599 15.0317 2.58171 16.7226L1 22.5L6.9105 20.9495C8.53908 21.8379 10.3726 22.3061 12.2384 22.3066H12.2431C18.3879 22.3066 23.39 17.3048 23.3923 11.1574C23.3936 8.17822 22.2349 5.37715 20.1298 3.26981ZM12.243 20.4237H12.2391C10.5763 20.423 8.94556 19.9761 7.52254 19.132L7.18433 18.931L3.67694 19.8511L4.61308 16.4315L4.39265 16.0809C3.46501 14.6054 2.97515 12.9001 2.97599 11.1492C2.97792 6.03984 7.13515 1.88304 12.2467 1.88304C14.7219 1.88385 17.0487 2.84899 18.7982 4.60061C20.5478 6.35224 21.5107 8.68053 21.5099 11.1567C21.5078 16.2664 17.3508 20.4237 12.243 20.4237ZM17.3261 13.4832C17.0476 13.3437 15.6778 12.67 15.4224 12.5769C15.1672 12.4839 14.9813 12.4376 14.7958 12.7164C14.61 12.9951 14.0762 13.6227 13.9136 13.8085C13.751 13.9945 13.5886 14.0178 13.31 13.8783C13.0314 13.7389 12.1338 13.4446 11.0696 12.4955C10.2415 11.7568 9.68247 10.8446 9.51987 10.5658C9.35755 10.2867 9.51846 10.1505 9.64207 9.99724C9.94364 9.62275 10.2456 9.23013 10.3385 9.04433C10.4314 8.85835 10.3849 8.69565 10.3151 8.55625C10.2456 8.41686 9.68851 7.04563 9.45641 6.48766C9.23011 5.94467 9.00061 6.01797 8.8295 6.0095C8.66719 6.00138 8.48139 5.99973 8.29559 5.99973C8.10989 5.99973 7.80804 6.06934 7.55263 6.34841C7.29733 6.62734 6.57775 7.30121 6.57775 8.67244C6.57775 10.0437 7.57597 11.3683 7.71523 11.5543C7.85445 11.7402 9.67972 14.5541 12.4742 15.7607C13.1389 16.048 13.6577 16.2192 14.0624 16.3476C14.7298 16.5596 15.337 16.5297 15.8171 16.458C16.3524 16.378 17.4652 15.784 17.6975 15.1333C17.9296 14.4826 17.9296 13.9249 17.8598 13.8085C17.7904 13.6924 17.6046 13.6227 17.3261 13.4832Z"
+                              fill="#343A3F"/>
+                      </svg>
+                  </a>
+              </div>
+              
+          </div>
+          <div class="header__service">
+              <button type="button" class="header__service-button">
+                  <img
+                          class="header__service-icon"
+                          src="./icons/services/fire.svg"
+                          alt=""
+                          width="20" height="20"
+                  />
+                  <span>Акции</span>
+              </button>
+              
+              <button type="button" class="header__service-button">
+                  <img
+                          class="header__service-icon"
+                          src="./icons/services/lightning.svg"
+                          alt=""
+                          width="20" height="20"
+                  />
+                  <span>Горячее предложение</span>
+              </button>
+              
+              <button type="button" class="header__service-button">
+                  <img
+                          class="header__service-icon"
+                          src="./icons/services/present.svg"
+                          alt=""
+                          width="20" height="20"
+                  />
+                  <span>Подарочные наборы</span>
+              </button>
+              <div class="header__service-wrapper">
+                  <button type="button" class="header__service-button">
+                  <img
+                          class="header__service-icon"
+                          src="./icons/services/parchment.svg"
+                          alt=""
+                          width="20" height="20"
+                  />
+                  <span>События</span>
+                    </button>
+              
+                  <div class="header__service-popup">
+                      <div class="header__service-popup-item">ИгроМИР</div>
+                      <div class="header__service-popup-item">Мероприятия</div>
+                      <div class="header__service-popup-item">Мастер-классы</div>
+                  </div>
+              </div>
+              
+              <button type="button" class="header__service-button">
+                  <img
+                          class="header__service-icon"
+                          src="./icons/services/troll.svg"
+                          alt=""
+                          width="20" height="20"
+                  />
+                  <span>Наши бренды</span>
+              </button>
+          </div>
+          <div class="header__language">
+            <img
+                    class="header__language-icon"
+                    src="./icons/other/earth.svg"
+                    alt=""
+                    width="21" height="21"
+            />
+              <span class="header__language-text">RU</span>
+              <span class="header__language-line"></span>
+              <span class="header__language-text is-active">ENG</span>
+          </div>
+          <div class="header__actions">
+              <button type="button" class="header__actions-button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.0396 2.8001C16.0078 2.81615 14.9985 3.10418 14.1136 3.6351C13.2287 4.16602 12.4996 4.92103 11.9999 5.82389C11.5002 4.92103 10.7711 4.16602 9.88623 3.6351C9.00136 3.10418 7.99207 2.81615 6.96027 2.8001C5.31545 2.87157 3.76577 3.5911 2.64979 4.80152C1.53381 6.01193 0.942234 7.61483 1.00431 9.26002C1.00431 13.4264 5.38973 17.9768 9.06776 21.062C9.88896 21.7521 10.9273 22.1304 11.9999 22.1304C13.0726 22.1304 14.1109 21.7521 14.9321 21.062C18.6101 17.9768 22.9955 13.4264 22.9955 9.26002C23.0576 7.61483 22.466 6.01193 21.35 4.80152C20.2341 3.5911 18.6844 2.87157 17.0396 2.8001Z"
+                          fill="#343A3F"/>
+                    </svg>
+
+              </button>
+              <button type="button" class="header__actions-button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_1580)">
+                    <path d="M9.3623 11.1722H7.70713C7.47881 11.1722 7.29333 11.3577 7.29333 11.586V11.9998H9.77609V11.586C9.77609 11.3581 9.59082 11.1722 9.3623 11.1722Z"
+                          fill="#343A3F"/>
+                    <path d="M13.914 7.44815H13.0864V10.3447C13.0864 11.6493 12.5315 12.8241 11.6488 13.6549H13.914V7.44815Z"
+                          fill="#343A3F"/>
+                    <path d="M6.29403 18.3759L7.78858 17.379L5.9849 16.1767L5.69153 16.266L6.29403 18.3759Z"
+                          fill="#343A3F"/>
+                    <path d="M12.6238 14.4825H11.4313V15.4119L12.0681 15.5939L12.6238 14.4825Z"
+                          fill="#343A3F"/>
+                    <path d="M12.2588 7.44815H4.81055V10.3447C4.81055 12.3982 6.48107 14.0687 8.53468 14.0687C10.5883 14.0687 12.2588 12.3982 12.2588 10.3447V7.44815ZM6.05193 8.68951C6.05193 8.4612 6.23741 8.27572 6.46572 8.27572C6.69423 8.27572 6.87951 8.4612 6.87951 8.68951C6.87951 8.91782 6.69423 9.10329 6.46572 9.10329C6.23741 9.10329 6.05193 8.91842 6.05193 8.68951ZM10.6037 12.8274H6.46572V11.586C6.46572 10.9017 7.02276 10.3447 7.7071 10.3447H9.36227C10.0466 10.3447 10.6037 10.9017 10.6037 11.586V12.8274ZM10.6037 9.10329C10.3753 9.10329 10.1899 8.91782 10.1899 8.68951C10.1899 8.4612 10.3753 8.27572 10.6037 8.27572C10.8322 8.27572 11.0174 8.4612 11.0174 8.68951C11.0174 8.91842 10.8322 9.10329 10.6037 9.10329Z"
+                          fill="#343A3F"/>
+                    <path d="M15.5273 0.413788H15.1553C14.156 0.413788 13.3201 1.12599 13.1282 2.06893H13.5001C14.4995 2.06893 15.3353 1.35713 15.5273 0.413788Z"
+                          fill="#343A3F"/>
+                    <path d="M14.7416 4.55164H14.3575L2.32776 5.75401V6.62057H14.7416V4.55164Z"
+                          fill="#343A3F"/>
+                    <path d="M11.0174 3.31029C11.0174 2.62596 11.5745 2.06893 12.2588 2.06893C12.2699 2.06893 12.2804 2.07176 12.2915 2.07216C12.2923 2.06529 12.2936 2.05863 12.2948 2.05155C11.552 0.785749 10.1997 0 8.725 0C7.02053 0 5.50942 1.02295 4.8764 2.60556C4.56767 3.37696 4.16621 4.10674 3.68958 4.78622L11.2524 4.03158C11.1059 3.82792 11.0174 3.58002 11.0174 3.31029Z"
+                          fill="#343A3F"/>
+                    <path d="M12.6726 3.31029C12.6726 3.5388 12.4873 3.72407 12.2588 3.72407C12.0302 3.72407 11.845 3.5388 11.845 3.31029C11.845 3.08177 12.0302 2.8965 12.2588 2.8965C12.4873 2.8965 12.6726 3.08177 12.6726 3.31029Z"
+                          fill="#343A3F"/>
+                    <path d="M9.28088 17.379L10.7754 18.3759L11.3804 16.2581L11.0878 16.1744L9.28088 17.379Z"
+                          fill="#343A3F"/>
+                    <path d="M13.914 14.4825H13.5491L12.8779 15.8253L13.5204 16.0085L13.6215 15.6378L16.0711 16.2502L15.9238 16.8381C16.2796 17.0723 16.5764 17.375 16.794 17.7277L17.98 15.3555L14.7097 13.8689C14.6145 14.2215 14.2955 14.4825 13.914 14.4825Z"
+                          fill="#343A3F"/>
+                    <path d="M15.6942 17.7005C15.301 19.1218 14.7013 20.458 13.9139 21.6783V24H16.3967V19.2518C16.3967 18.6452 16.1352 18.087 15.6942 17.7005Z"
+                          fill="#343A3F"/>
+                    <path d="M13.0864 23.9996V22.8298C12.7641 23.2353 12.4251 23.6288 12.0586 24H13.0864V23.9996Z"
+                          fill="#343A3F"/>
+                    <path d="M15.0672 16.8527L14.2065 16.6375L14.158 16.8155C13.4264 19.4976 11.9472 21.8983 9.88067 23.7583L9.61255 23.9996H10.8531C12.8952 22.1743 14.3277 19.8108 14.9931 17.1497L15.0672 16.8527Z"
+                          fill="#343A3F"/>
+                    <path d="M2.14028 17.3439C1.26259 17.6104 0.672607 18.406 0.672607 19.3239V24H3.15537V20.8491C3.15537 19.6068 2.9513 18.389 2.54882 17.2206L2.14028 17.3439Z"
+                          fill="#343A3F"/>
+                    <path d="M13.2949 16.805L12.176 16.4852L11.2595 19.6928L8.94849 18.1524V23.4844L9.32712 23.1435C11.2219 21.4383 12.5866 19.2489 13.2949 16.805Z"
+                          fill="#343A3F"/>
+                    <path d="M4.89901 16.5064L3.34021 16.9798C3.76613 18.226 3.98292 19.5245 3.98292 20.8485V23.9996H8.12085V18.1524L5.80984 19.6928L4.89901 16.5064Z"
+                          fill="#343A3F"/>
+                    <path d="M3.98298 10.3447V7.44815H3.1554V13.6549H5.42055C4.5378 12.8245 3.98298 11.6493 3.98298 10.3447Z"
+                          fill="#343A3F"/>
+                    <path d="M10.6036 14.394C9.98213 14.713 9.27981 14.8963 8.53466 14.8963C7.78951 14.8963 7.0872 14.7126 6.4657 14.394V15.5024L8.53466 16.8816L10.6036 15.5024V14.394Z"
+                          fill="#343A3F"/>
+                    <path d="M21.3635 8.62121L20.4817 6.83817L18.9747 9.44757L19.4295 11.1437L18.1352 13.3852L15.5952 12.2134L17.0833 9.63588L18.7789 9.18148L20.2856 6.57168L18.3006 6.69998L17.4193 4.91653L15.9122 7.52634L16.3666 9.22169L14.8404 11.8648L14.7416 11.819V12.9747L18.6876 14.7684L19.1464 13.8519L18.8898 13.7335L20.1465 11.5575L21.8419 11.1027L23.3488 8.49332L21.3635 8.62121Z"
+                          fill="#343A3F"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_2_1580">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+
+              </button>
+              <button type="button"
+                      class="header__actions-button header__actions-button-round"
+              >
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_1740)">
+                    <path d="M0.703125 10.1939H0V16.3633C0.924844 16.4212 1.78777 16.7109 2.53125 17.1751V10.1939H0.703125Z"
+                          fill="#343A3F"/>
+                    <path d="M19.5619 2.54672H4.43813C1.99092 2.54672 0 4.53764 0 6.98485V8.78766H0.703125H3.9375H9.15244V7.48299H14.8476V8.78766H20.0625H23.2969H24V6.98485C24 4.53764 22.0091 2.54672 19.5619 2.54672Z"
+                          fill="#343A3F"/>
+                    <path d="M14.8476 10.1939V10.9733C14.8476 11.2286 14.8133 11.4759 14.75 11.7115H20.0625V10.1939H14.8476Z"
+                          fill="#343A3F"/>
+                    <path d="M23.2969 10.1939H21.4688V17.1751C22.2122 16.7109 23.0752 16.4212 24 16.3633V10.1939H23.2969Z"
+                          fill="#343A3F"/>
+                    <path d="M13.8704 13.1178C13.3696 13.5551 12.7155 13.8209 12 13.8209C11.2845 13.8209 10.6304 13.5551 10.1296 13.1178H3.9375V18.4364C4.59966 19.2781 5.01895 20.3193 5.08992 21.4533H18.9101C18.981 20.3192 19.4003 19.2781 20.0625 18.4364V13.1178H13.8704Z"
+                          fill="#343A3F"/>
+                    <path d="M20.3208 21.4533H24V17.7741C22.047 17.9395 20.4863 19.5002 20.3208 21.4533Z"
+                          fill="#343A3F"/>
+                    <path d="M0 17.7741V21.4533H3.67922C3.51375 19.5002 1.95305 17.9395 0 17.7741Z"
+                          fill="#343A3F"/>
+                    <path d="M9.15244 10.9733V10.1939H3.9375V11.7115H9.25003C9.18675 11.4759 9.15244 11.2286 9.15244 10.9733Z"
+                          fill="#343A3F"/>
+                    <path d="M10.5587 8.88928V10.9734C10.5587 11.7681 11.2053 12.4147 12 12.4147C12.7947 12.4147 13.4413 11.7682 13.4413 10.9734V8.88928H10.5587Z"
+                          fill="#343A3F"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_2_1740">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+              </button>
+              
+          </div>
+          <button type="button" class="header__collect-button">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 3.33333V12.6667" stroke="#4888FF"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.33337 8H12.6667" stroke="#4888FF"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+
+              <span class="header-collect-button-text">Собрать компьютер</span>
+          </button>
+        </div>
+        
+        <div class="header__body mobile">
+            <div class="header__body-mobile">
+                <div class="header__mobile-left">
+                    <button type="button" class="header__button-menu">
+                        <span class="button-line"></span>
+                        <span class="button-line line-2"></span>
+                        <span class="button-line"></span>
+                    </button>
+            
+            <button type="button" class="header__actions-button header__actions-button-mobile">
+                  <img
+                          class="header__actions-icon"
+                          src="./icons/other/indian.svg"
+                          alt=""
+                          width="22" height="22"
+                  />
+              </button>
+            </div>
+            <a href="#">
+                 <img
+                         class="header__logo"
+                         src="./images/logo.png"
+                         alt=""
+                         width="56" height="56"
+                 />
+            </a>
+            
+            <div class="header__mobile-right">
+                <button type="button"
+                        class="header__actions-button header__actions-button-mobile">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.0396 2.8001C16.0078 2.81615 14.9985 3.10418 14.1136 3.6351C13.2287 4.16602 12.4996 4.92103 11.9999 5.82389C11.5002 4.92103 10.7711 4.16602 9.88623 3.6351C9.00136 3.10418 7.99207 2.81615 6.96027 2.8001C5.31545 2.87157 3.76577 3.5911 2.64979 4.80152C1.53381 6.01193 0.942234 7.61483 1.00431 9.26002C1.00431 13.4264 5.38973 17.9768 9.06776 21.062C9.88896 21.7521 10.9273 22.1304 11.9999 22.1304C13.0726 22.1304 14.1109 21.7521 14.9321 21.062C18.6101 17.9768 22.9955 13.4264 22.9955 9.26002C23.0576 7.61483 22.466 6.01193 21.35 4.80152C20.2341 3.5911 18.6844 2.87157 17.0396 2.8001Z"
+                          fill="#343A3F"/>
+                    </svg>
+
+              </button>
+                <button type="button"
+                        class="header__actions-button header__actions-button-round header__actions-button-mobile">
+                  <img
+                          class="header__actions-icon"
+                          src="./icons/other/box.svg"
+                          alt=""
+                          width="20" height="20"
+                  />
+              </button>
+            </div>
+            </div>
+            
+            
+            <div class="header__search">
+                  <input type="text"
+                         class="header__search-input"
+                         placeholder="Поиск товаров..."
+                  />
+                  <button class="header__search-button">Найти</button>
+              </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="catalog">
+            <h3 class="catalog__title">Отправляйся в приключения с нашими эпическими лут-корзинами и наборами!</h3>
+            <p class="catalog__text">Развивай свои навыки, следуя мудрым стратегиям мастеров, и поднимайся на новый уровень мастерства! С нашей поддержкой каждое твое действие станет частью великого искусства, а победы — результатом точного плана и безупречной подготовки!</p>
+            
+            <button type="button" class="catalog__button">В каталог</button>
+        </section>
+    </main>
+
+<div class="popup-desktop-menu" data-js-popup-desktop-menu>
+  <div class="popup-desktop-menu__body">
+    <ul class="popup-desktop-menu__list">
+      <li class="popup-desktop-menu__item">
+          <div class="popup-desktop-menu__item-content">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.9693 0H6.03073C5.41841 0 4.92346 0.495781 4.92346 1.10727V22.8923C4.92346 23.5042 5.41885 24 6.03073 24H17.9693C18.5808 24 19.0766 23.5042 19.0766 22.8923V1.10727C19.077 0.495386 18.5808 0 17.9693 0ZM10.7767 1.30677H13.2226C13.3504 1.30677 13.4535 1.4099 13.4535 1.5377C13.4535 1.6655 13.3504 1.76863 13.2226 1.76863H10.7767C10.6497 1.76863 10.5457 1.6655 10.5457 1.5377C10.5457 1.4099 10.6497 1.30677 10.7767 1.30677ZM13.477 22.0302H10.5227C10.2805 22.0302 10.0839 21.834 10.0839 21.5918C10.0839 21.3496 10.2805 21.1534 10.5227 21.1534H13.4769C13.7191 21.1534 13.9149 21.3496 13.9149 21.5918C13.9149 21.8341 13.7196 22.0302 13.477 22.0302ZM17.6927 19.446H6.30737V3.7535H17.6927V19.446Z"
+                  fill="#4888FF" fill-opacity="0.5"/>
+            </svg>
+              <span class="popup-desktop-menu__text">Смартфоны и гаджеты</span>
+          </div>
+          
+          <svg class="popup-desktop-menu__icon" width="24" height="24"
+               viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+      </li>
+      
+      <li class="popup-desktop-menu__item2">
+          <div class="popup-desktop-menu__item-content">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.3173 16.6614H21.3091V4.37201H2.67166V16.6614H2.68275L0 18.7674V19.6279H24V18.7674L21.3173 16.6614ZM4.37353 5.60965L19.8446 5.63277L19.7213 15.4383L4.34045 15.4998L4.37353 5.60965ZM10.6129 18.7733L10.989 18.2307H13.4279L13.8774 18.7733H10.6129ZM2.57413 17.7389L3.45919 17.1229H20.6857L21.915 17.8078L2.57413 17.7389Z" fill="#4888FF" fill-opacity="0.5"/>
+            </svg>
+              <span class="popup-desktop-menu__text">Ноутбуки и компьютеры</span>
+          </div>
+          
+          <svg class="popup-desktop-menu__icon" width="24" height="24"
+               viewBox="0 0 24 24" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+      </li>
+        
+        <li class="popup-desktop-menu__item3">
+            <div class="popup-desktop-menu__item-content">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0482 20.9873H15.4316V19.726H8.5684V20.9873H5.95184C5.55748 20.9873 5.23779 21.307 5.23779 21.7013C5.23779 22.0957 5.55748 22.4154 5.95184 22.4154H18.0482C18.4426 22.4154 18.7623 22.0957 18.7623 21.7013C18.7623 21.307 18.4425 20.9873 18.0482 20.9873Z"
+                      fill="#4888FF" fill-opacity="0.5"/>
+                <path d="M0 15.6536V17.5838C0 17.9781 0.319687 18.2978 0.714047 18.2978H23.286C23.6803 18.2978 24 17.9781 24 17.5838V15.6536H0Z"
+                      fill="#4888FF" fill-opacity="0.5"/>
+                <path d="M23.286 1.58459H0.714047C0.319687 1.58459 0 1.90433 0 2.29864V14.2254H24V2.29864C24 1.90433 23.6803 1.58459 23.286 1.58459Z"
+                      fill="#4888FF" fill-opacity="0.5"/>
+                </svg>
+
+              <span class="popup-desktop-menu__text">Телевизоры и цифровое ТВ</span>
+          </div>
+          
+          <svg class="popup-desktop-menu__icon" width="24" height="24"
+               viewBox="0 0 24 24" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </li>
+        
+        <li class="popup-desktop-menu__item4">
+        <div class="popup-desktop-menu__item-content">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M20.25 4.5C19.8353 4.5 19.5 4.16475 19.5 3.75C19.5 3.33525 19.8353 3 20.25 3C20.6647 3 21 3.33525 21 3.75C21 4.16475 20.6647 4.5 20.25 4.5ZM12 21C7.02975 21 3 16.971 3 12C3 7.02975 7.02975 3 12 3C16.9702 3 21 7.02975 21 12C21 16.971 16.9702 21 12 21ZM20.25 21C19.8353 21 19.5 20.6647 19.5 20.25C19.5 19.8353 19.8353 19.5 20.25 19.5C20.6647 19.5 21 19.8353 21 20.25C21 20.6647 20.6647 21 20.25 21ZM3.75 21C3.33525 21 3 20.6647 3 20.25C3 19.8353 3.33525 19.5 3.75 19.5C4.16475 19.5 4.5 19.8353 4.5 20.25C4.5 20.6647 4.16475 21 3.75 21ZM3.75 3C4.16475 3 4.5 3.33525 4.5 3.75C4.5 4.16475 4.16475 4.5 3.75 4.5C3.33525 4.5 3 4.16475 3 3.75C3 3.33525 3.33525 3 3.75 3ZM21 0H3C1.34325 0 0 1.34325 0 3V21C0 22.6567 1.34325 24 3 24H21C22.6567 24 24 22.6567 24 21V3C24 1.34325 22.6567 0 21 0ZM12 16.5C9.51525 16.5 7.5 14.4847 7.5 12C7.5 9.51525 9.51525 7.5 12 7.5C14.4847 7.5 16.5 9.51525 16.5 12C16.5 14.4847 14.4847 16.5 12 16.5ZM12 4.5C7.8585 4.5 4.5 7.8585 4.5 12C4.5 16.1423 7.8585 19.5 12 19.5C16.1415 19.5 19.5 16.1423 19.5 12C19.5 7.8585 16.1415 4.5 12 4.5ZM12 9C10.3433 9 9 10.3433 9 12C9 13.6567 10.3433 15 12 15C13.6567 15 15 13.6567 15 12C15 10.3433 13.6567 9 12 9Z"
+                  fill="#4888FF" fill-opacity="0.5"/>
+            </svg>
+
+
+              <span class="popup-desktop-menu__text">Аудиотехника</span>
+          </div>
+          
+          <svg class="popup-desktop-menu__icon" width="24" height="24"
+               viewBox="0 0 24 24" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </li>
+        
+        <li class="popup-desktop-menu__item5">
+            <div class="popup-desktop-menu__item-content">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.8977 15.5083C12.8977 14.4391 12.2244 13.8175 10.9335 12.7216C10.6419 12.4716 10.3269 12.2066 10.0019 11.9116C9.63104 12.2525 9.27854 12.5525 8.95521 12.8283C7.66687 13.9166 7.10271 14.4491 7.10271 15.5083C7.10271 16.2768 7.40798 17.0137 7.95137 17.5571C8.49475 18.1005 9.23174 18.4058 10.0002 18.4058C10.7687 18.4058 11.5057 18.1005 12.049 17.5571C12.5924 17.0137 12.8977 16.2768 12.8977 15.5083Z" fill="#4888FF" fill-opacity="0.5"/>
+            <path d="M13.6738 3.3625C12.6738 2.51333 11.6404 1.63583 10.5954 0.591667L10.0004 0L9.4171 0.5925C7.53877 2.4775 6.65044 5.3725 6.26544 7.10917C5.97001 6.65171 5.75077 6.14935 5.61627 5.62167L5.26044 4.2575L4.23294 5.22167C2.43377 6.91167 1.23294 8.5875 1.23294 11.2708C1.21564 13.2071 1.8459 15.0936 3.02359 16.6307C4.20128 18.1677 5.85885 19.2671 7.73294 19.7542C8.20383 19.8735 8.68336 19.9557 9.1671 20C8.11817 19.8045 7.17052 19.2486 6.48804 18.4284C5.80556 17.6082 5.43117 16.5753 5.4296 15.5083C5.4296 13.6333 6.56044 12.675 7.8696 11.5567C8.3371 11.1592 8.8696 10.7083 9.4071 10.1675L10.0004 9.5775L10.5904 10.1675C11.0704 10.6475 11.5504 11.0542 12.0146 11.4492C13.3279 12.5633 14.5679 13.6158 14.5679 15.5083C14.5666 16.5711 14.1952 17.6003 13.5176 18.419C12.84 19.2378 11.8984 19.795 10.8546 19.995C13.0217 19.7847 15.0328 18.7748 16.4957 17.1622C17.9586 15.5495 18.7684 13.4498 18.7671 11.2725C18.7671 7.6875 16.4063 5.68333 13.6738 3.3625Z" fill="#4888FF" fill-opacity="0.5"/>
+            </svg>
+                
+                  <span class="popup-desktop-menu__text">Акции</span>
+              </div>
+              
+              <svg class="popup-desktop-menu__icon" width="24" height="24"
+                   viewBox="0 0 24 24" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        </li>
+        
+        <li class="popup-desktop-menu__item6">
+         <div class="popup-desktop-menu__item-content">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_287)">
+                <path d="M23.8456 13.0687L22.082 10.2702C21.9423 10.0483 21.8951 9.78049 21.9505 9.52421L22.6507 6.29121C22.7599 5.78737 22.4684 5.28306 21.9776 5.12557L18.8277 4.11542C18.5781 4.03532 18.3698 3.86056 18.2475 3.62864L16.7057 0.702102C16.4656 0.245869 15.9182 0.0467717 15.4409 0.241594L12.3784 1.49265C12.1357 1.59155 11.8639 1.59155 11.6212 1.49265L8.5592 0.24183C8.08191 0.047007 7.53454 0.246104 7.29414 0.702337L5.75239 3.6286C5.63013 3.86052 5.42183 4.03528 5.17219 4.11538L2.02233 5.12553C1.53127 5.28302 1.24006 5.78737 1.34923 6.29117L2.04911 9.52418C2.10464 9.78045 2.05745 10.0483 1.91766 10.2701L0.154258 13.0687C-0.120681 13.5049 -0.0192702 14.0784 0.38814 14.3944L3.0024 16.421C3.2097 16.5816 3.34572 16.8172 3.38126 17.077L3.82926 20.3544C3.89887 20.8652 4.34534 21.2396 4.8602 21.2196L8.16559 21.0916C8.42762 21.0815 8.68318 21.1745 8.87751 21.3505L11.327 23.5731C11.7089 23.9194 12.2916 23.9194 12.6732 23.5731L15.1229 21.3505C15.3171 21.1742 15.5728 21.0813 15.8348 21.0916L19.14 21.2196C19.6553 21.2396 20.1013 20.865 20.1711 20.3544L20.6191 17.077C20.6547 16.8172 20.7906 16.5817 20.9978 16.421L23.612 14.3944C24.0194 14.0784 24.1206 13.5049 23.8456 13.0687ZM9.2248 15.9968L6.3058 13.958L7.50552 16.7385L6.70595 17.0835L4.86596 12.8201L5.70333 12.4585L8.67743 14.5526L7.44842 11.7055L8.24798 11.3602L10.0885 15.6239L9.2248 15.9968ZM10.9987 15.231L9.15868 10.9675L12.3201 9.6028L12.6311 10.3242L10.3304 11.3171L10.7383 12.2621L12.879 11.3381L13.189 12.0566L11.0483 12.9803L11.5491 14.1407L13.931 13.1128L14.241 13.8312L10.9987 15.231ZM18.2057 12.1207L15.9808 9.29935L16.5099 12.8522L15.5764 13.2551L12.7187 9.43108L13.5996 9.05045L15.5065 11.7018L15.022 8.43696L16.0461 7.99501L18.0787 10.6506L17.4477 7.39003L18.3143 7.01591L19.1189 11.7266L18.2057 12.1207Z" fill="#4888FF" fill-opacity="0.5"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_287">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+
+                
+                  <span class="popup-desktop-menu__text">Новинки</span>
+              </div>
+              
+              <svg class="popup-desktop-menu__icon" width="24" height="24"
+                   viewBox="0 0 24 24" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        </li>
+    </ul>
+  </div>
+  
+  <div id="submenu" class="popup-desktop-menu__submenu"
+       data-js-popup-desktop-submenu>
+    <div id="sub1" class="popup-desktop-menu__submenu-content">
+      <div class="popup-desktop-menu__submenu-body">
+          <div class="popup-desktop-menu__left-wrapper">
+              <h2 class="popup-desktop-menu__submenu-left-content">Смартфоны</h2>
+              
+              <ul class="popup-desktop-menu__left-list">
+                  <li class="popup-desktop-menu__left-item">
+                      <span
+                              class="popup-desktop-menu__left-item-text color">Apple
+                          iPhone</span>
+                      <span
+                              class="popup-desktop-menu__left-item-number color">123</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                           viewBox="0 0 24 24" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__left-item">
+                      <span
+                              class="popup-desktop-menu__left-item-text color">Смартфоны</span>
+                      <span
+                              class="popup-desktop-menu__left-item-number color">227</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__left-item">
+                      <span
+                              class="popup-desktop-menu__left-item-text color">iPhone 16</span>
+                      <span
+                              class="popup-desktop-menu__left-item-number color">120</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__left-item">
+                      <span
+                              class="popup-desktop-menu__left-item-text color">Складные</span>
+                      <span
+                              class="popup-desktop-menu__left-item-number color">30</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__left-item">
+                      <span
+                              class="popup-desktop-menu__left-item-text color">realme</span>
+                      <span
+                              class="popup-desktop-menu__left-item-number color">120</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__left-item">
+                      <span class="popup-desktop-menu__left-item-text color">Huawei Mate X6</span>
+                      <span
+                              class="popup-desktop-menu__left-item-number color">100</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__left-item">
+                      <span
+                              class="popup-desktop-menu__left-item-text color">Кнопочные</span>
+                      <span
+                              class="popup-desktop-menu__left-item-number color">23</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__left-item">
+                      <span
+                              class="popup-desktop-menu__left-item-text color">Домашние</span>
+                      <span
+                              class="popup-desktop-menu__left-item-number color">17</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__left-item">
+                      <span
+                              class="popup-desktop-menu__left-item-text color">Samsung</span>
+                      <span
+                              class="popup-desktop-menu__left-item-number color">27</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+              </ul>
+          </div>
+          
+          <div class="popup-desktop-menu__right-wrapper">
+              <h2 class="popup-desktop-menu__submenu-right-content">Гаджеты</h2>
+              
+              <ul class="popup-desktop-menu__right-list">
+                  <li class="popup-desktop-menu__right-item">
+                      <span
+                              class="popup-desktop-menu__right-item-text color">Смарт-часы</span>
+                      <span
+                              class="popup-desktop-menu__right-item-number color">15</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__right-item">
+                      <span
+                              class="popup-desktop-menu__right-item-text color">Смарт-кольца</span>
+                      <span
+                              class="popup-desktop-menu__right-item-number color">34</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__right-item">
+                      <span
+                              class="popup-desktop-menu__right-item-text color">Наушники</span>
+                      <span
+                              class="popup-desktop-menu__right-item-number color">21</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__right-item">
+                      <span
+                              class="popup-desktop-menu__right-item-text color">Гарнитуры</span>
+                      <span
+                              class="popup-desktop-menu__right-item-number color">12</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__right-item">
+                      <span
+                              class="popup-desktop-menu__right-item-text color">Портативное аудио</span>
+                      <span
+                              class="popup-desktop-menu__right-item-number color">42</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__right-item">
+                      <span
+                              class="popup-desktop-menu__right-item-text color">Умные гаджеты</span>
+                      <span
+                              class="popup-desktop-menu__right-item-number color">46</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__right-item">
+                      <span
+                              class="popup-desktop-menu__right-item-text color">Очки VR</span>
+                      <span
+                              class="popup-desktop-menu__right-item-number color">49</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+                  
+                  <li class="popup-desktop-menu__right-item">
+                      <span
+                              class="popup-desktop-menu__right-item-text color">Для блогеров</span>
+                      <span
+                              class="popup-desktop-menu__right-item-number color">32</span>
+                      <svg
+                              class="popup-desktop-menu__icon popup-desktop-menu__icon--top" width="24" height="24"
+                              viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#4888FF" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </div>
+    
+    <div id="sub2" class="popup-desktop-menu__submenu-content">
+      <h2>Контент 2</h2>
+    </div>
+    
+    <div id="sub3" class="popup-desktop-menu__submenu-content">
+      <h2>Контент 3</h2>
+    </div>
+      
+      <div id="sub4" class="popup-desktop-menu__submenu-content">
+        <h2>Контент 4</h2>
+    </div>
+      
+      <div id="sub5" class="popup-desktop-menu__submenu-content">
+      <h2>Контент 5</h2>
+    </div>
+      
+      <div id="sub6" class="popup-desktop-menu__submenu-content">
+      <h2>Контент 6</h2>
+    </div>
+  </div>
+</div>
+</body>
+</html>
